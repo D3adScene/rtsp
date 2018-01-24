@@ -1,0 +1,17 @@
+<div ng-controller="LoginController" id="login-page">
+  <form>
+    <div class="form-container">
+      <h1>Login to Your Account</h1>
+      <div class="input-container">
+        <input type="text" name="username" ng-model="username" placeholder="Username">
+      </div>
+      <div class="input-container">
+        <input type="password" name="password" ng-model="password" placeholder="Pssword">
+      </div>
+      <button ng-click="submitLogin()" ng-disabled="isDisabled">Log In</button>
+    </div>
+    <div class="error">
+      {{responseStatus}}
+    </div>
+  </form>
+</div>

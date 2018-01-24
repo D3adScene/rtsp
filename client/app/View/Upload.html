@@ -1,0 +1,13 @@
+<div ng-controller="UploadController" id="upload-page">
+  <form>
+    <div class="input-container">
+      <label for="rtspUrl">Video Url</label>
+      <input type="text" name="rtspUrl" ng-model="rtspUrl">
+    </div>
+    <button ng-click="submitUploadUrl()" ng-disabled="isDisabled">Upload</button>
+    <div class="error">
+        {{responseStatus}}
+    </div>
+    <a ui-sref="rtsp" ui-sref-active="active">Go To My Video List</a>
+  </form>
+</div>
